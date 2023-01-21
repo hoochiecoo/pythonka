@@ -13,9 +13,10 @@ while True:
             multiply_by_2 = False
         previous_values.append(value)
         sum += value
-        steps.append({'value': value, 'sum': sum, 'previous_values': previous_values.copy()})
+        steps.append({'value': value, 'sum': sum, 'previous_values': previous_values.copy(), 'multiply_by_2': multiply_by_2})
         print("Current value:", value)
         print("Current sum:", sum)
+        print("multiply_by_2:", multiply_by_2)
         print("Previous values:", previous_values)
     except ValueError:
         print("Invalid input. Please enter an integer.")
